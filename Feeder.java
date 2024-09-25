@@ -8,7 +8,7 @@ public class Feeder {
     {
         currentFood = c;
     }
-    public String toString()
+    public String toString(int numBirds)
     {
         return "Current Food: " + currentFood;
     }
@@ -40,6 +40,7 @@ public class Feeder {
     public int simulateManyDays(int numBirds, int numDays) {
         return 0;
     }
+
 
     public int getCurrentFood()
     {
