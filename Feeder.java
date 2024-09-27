@@ -14,7 +14,7 @@ public class Feeder {
     public Feeder() {}
     private int currentFood;
 
-    public void simulateOneDay(int numBirds) {
+    public int simulateOneDay(int numBirds) {
 
         if(Math.random() < 0.05) currentFood = 0;
         else
@@ -23,7 +23,7 @@ public class Feeder {
             currentFood -= eaten * numBirds;
             if(currentFood < 0) currentFood = 0;
         }
-
+return currentFood;
     }
 
     public int simulateManyDays(int numBirds, int numDays)
